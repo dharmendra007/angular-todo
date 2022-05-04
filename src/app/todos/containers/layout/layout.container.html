@@ -1,0 +1,11 @@
+<section class="todoapp">
+    <header class="header">
+        <h1>Todos</h1>
+        <app-new-todo (saveTodo)="onSaveTodo($event)"></app-new-todo>
+    </header>
+    <app-todo-list></app-todo-list>
+    <app-footer [countTodos]="counter$ | async" [currentFilter]="filter$ | async"></app-footer>
+</section>
+<footer class="info">
+
+</footer>

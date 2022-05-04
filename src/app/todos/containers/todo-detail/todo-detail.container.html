@@ -1,0 +1,7 @@
+<section id="main" class="main" *ngIf="todo$ | async as todo">
+    <div>Title: </div>
+    <h1>{{ todo.title }}</h1>
+    <div>Status: </div>
+    <p *ngIf="todo.completed==true">Completed</p>
+    <p *ngIf="todo.completed==false">Not Completed</p>
+</section>
